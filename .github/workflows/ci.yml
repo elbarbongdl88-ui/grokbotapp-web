@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate deploy contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Require deployable files
+        run: |
+          set -euo pipefail
+          test -f index.html
+          test -f Caddyfile
+          test -f railway.json
+          test -f VERSION.txt
+          python3 -m json.tool railway.json >/dev/null
+          echo "Grokbotapp-web deploy contract OK"

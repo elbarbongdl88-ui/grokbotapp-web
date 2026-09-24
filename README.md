@@ -1,7 +1,18 @@
-# Grokbotapp v1.1
+# Grokbotapp (public static)
 
-Live: https://grokbotapp.up.railway.app
+Production host: Railway Caddy.
 
-Filled pages: home, Jet Motos 10-cam quote, XR190 fitment, CI/CD lock, status.json.
+- Live: https://grokbotapp.up.railway.app/
+- Source: https://github.com/elbarbongdl88-ui/grokbotapp-web
+- App contract repo: https://github.com/elbarbongdl88-ui/grokbotapp
 
-Do not set Railway start to npx. Caddy only.
+## Deploy paths
+
+1. **Railway (live production)**  
+   Push to `main` on this repository. Service `grokbotapp` in project `grokbotapp` uses `Caddyfile` and `railway.json`.
+
+2. **GitHub Pages (free public mirror)**  
+   `.github/workflows/pages.yml` enables Pages from Actions and publishes the repository root.  
+   Expected URL after a green run: https://elbarbongdl88-ui.github.io/grokbotapp-web/
+
+Vercel team billing is blocked (HTTP 402). Do not add a Vercel token workflow.
