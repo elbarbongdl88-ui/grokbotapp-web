@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CI/CD lock</title>
+  <title>Free CI/CD</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <p><a href="/">← Grokbotapp</a></p>
-  <h1>Pipeline bloqueado</h1>
-  <pre>push grokbotapp-web main
-  → Railway Railpack Staticfile + Caddy
+  <h1>Solo free</h1>
+  <pre>git push grokbotapp-web main
+  → GitHub Actions (free, public)
+  → Railway Caddy + sleep on idle (free hobby)
   → https://grokbotapp.up.railway.app</pre>
   <ul>
-    <li>Start command: <code>caddy run --config /app/Caddyfile --adapter caddyfile</code></li>
-    <li>No usar npx en Railway. El image no trae Node.</li>
-    <li>Vercel create_git_project = 402 hasta pagar Kennel</li>
-    <li>aegis-face PR #5 merged, CI green</li>
+    <li>Start: <code>caddy run --config /app/Caddyfile --adapter caddyfile</code></li>
+    <li>Vercel: fuera. No payment method. No create_git_project</li>
+    <li>GitHub Pages official: fuera. La integración no crea el site</li>
+    <li>Primer hit tras sleep puede tardar ~10–30 s. Eso es el precio de free</li>
   </ul>
 </body>
 </html>

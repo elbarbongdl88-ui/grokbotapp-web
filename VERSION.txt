@@ -1,3 +1,2 @@
-GROKBOTAPP LOCKED v1.1.0-2026-09-24
-Host: https://grokbotapp.up.railway.app
-Source: elbarbongdl88-ui/grokbotapp-web
+GROKBOTAPP FREE LOCK v1.2.0-2026-09-24
+No Vercel. No paid Pages. Railway + GitHub only.
