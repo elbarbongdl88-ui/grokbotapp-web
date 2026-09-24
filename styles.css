@@ -1,0 +1,7 @@
+body{font-family:system-ui,sans-serif;margin:1.5rem auto;max-width:52rem;background:#0b0b0b;color:#f2f2f2;line-height:1.45}
+a{color:#7dd3fc}nav{display:flex;flex-wrap:wrap;gap:.75rem;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th,td{border:1px solid #333;padding:.45rem .5rem;text-align:left}
+.kicker{color:#9ca3af;letter-spacing:.08em;font-size:.75rem}
+.btn{display:inline-block;margin:.5rem 0;padding:.55rem .8rem;background:#0369a1;color:#fff;text-decoration:none;border-radius:6px}
+pre{background:#171717;padding:1rem;overflow:auto;white-space:pre-wrap}
