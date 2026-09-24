@@ -1,10 +1,13 @@
 {
-  "version": "1.1.0",
-  "lockedAt": "2026-09-24T13:00:00Z",
+  "version": "1.1.1",
+  "lockedAt": "2026-09-24T13:05:00Z",
   "liveUrl": "https://grokbotapp.up.railway.app",
   "host": "railway",
+  "userPages": "https://elbarbongdl88-ui.github.io/",
+  "projectPages": "https://elbarbongdl88-ui.github.io/grokbotapp-web/",
+  "cdn": "https://cdn.jsdelivr.net/gh/elbarbongdl88-ui/grokbotapp-web@main/index.html",
   "vercel": "blocked-402",
-  "pages": "not-enabled",
+  "pagesActionsOfficial": "blocked-integration-cannot-create-site",
   "jetMotos": {
     "emailBr": "bounce-domain-missing",
     "emailCom": "sent-no-reply-yet",
