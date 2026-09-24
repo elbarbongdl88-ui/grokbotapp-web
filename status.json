@@ -1,9 +1,17 @@
 {
-  "version": "1.2.0-free",
-  "policy": "free-only-no-paid-hosts",
+  "version": "1.1.1",
+  "lockedAt": "2026-09-24T13:06:00Z",
   "liveUrl": "https://grokbotapp.up.railway.app",
-  "host": "railway-hobby-sleep",
-  "vercel": "abandoned-not-paying",
-  "githubPagesOfficial": "abandoned-not-paying",
-  "ci": "github-actions-free-public"
+  "host": "railway",
+  "userPages": "https://elbarbongdl88-ui.github.io/",
+  "cdn": "https://cdn.jsdelivr.net/gh/elbarbongdl88-ui/grokbotapp-web@main/index.html",
+  "jetMotos": {
+    "emailCom": "sent-no-reply-yet",
+    "whatsapp": "+554799897368",
+    "nivel2UnitBrl": 398.90,
+    "nivel2TenBrl": 3989.00,
+    "nivel2TenMxnApprox": 13563,
+    "nivel3Stock": "unavailable",
+    "followUp": "2026-09-25T09:00:00-06:00"
+  }
 }

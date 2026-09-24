@@ -3,21 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free CI/CD</title>
+  <title>CI/CD lock</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <p><a href="/">← Grokbotapp</a></p>
-  <h1>Solo free</h1>
-  <pre>git push grokbotapp-web main
-  → GitHub Actions (free, public)
-  → Railway Caddy + sleep on idle (free hobby)
+  <h1>Pipeline en uso</h1>
+  <pre>push grokbotapp-web main
+  → Railway Railpack + Caddy
   → https://grokbotapp.up.railway.app</pre>
   <ul>
     <li>Start: <code>caddy run --config /app/Caddyfile --adapter caddyfile</code></li>
-    <li>Vercel: fuera. No payment method. No create_git_project</li>
-    <li>GitHub Pages official: fuera. La integración no crea el site</li>
-    <li>Primer hit tras sleep puede tardar ~10–30 s. Eso es el precio de free</li>
+    <li>Espejo: <a href="https://elbarbongdl88-ui.github.io/">elbarbongdl88-ui.github.io</a></li>
+    <li>CDN: <a href="https://cdn.jsdelivr.net/gh/elbarbongdl88-ui/grokbotapp-web@main/index.html">jsDelivr</a></li>
   </ul>
 </body>
 </html>
