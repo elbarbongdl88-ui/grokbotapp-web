@@ -1,0 +1,46 @@
+name: Host monitor
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    name: Probe live hosts
+    runs-on: ubuntu-latest
+    steps:
+      - name: HTTP and content checks
+        run: |
+          set -euo pipefail
+          fail=0
+          check() {
+            local url="$1" expect="$2"
+            echo "== $url"
+            code=$(curl -sS -o /tmp/body -w "%{http_code}" -L --max-time 25 "$url" || echo 000)
+            echo "HTTP $code"
+            if [ "$code" != "200" ]; then
+              echo "FAIL status"
+              fail=1
+              return
+            fi
+            if ! grep -q "$expect" /tmp/body; then
+              echo "FAIL missing marker: $expect"
+              fail=1
+              return
+            fi
+            echo "OK"
+          }
+          check "https://grokbotapp.up.railway.app/" "LOCKED v1.1"
+          check "https://grokbotapp.up.railway.app/status.json" '"version"'
+          check "https://grokbotapp.up.railway.app/quote.html" "Jet Motos"
+          check "https://elbarbongdl88-ui.github.io/" "LOCKED v1.1"
+          check "https://elbarbongdl88-ui.github.io/status.json" '"version"'
+          check "https://cdn.jsdelivr.net/gh/elbarbongdl88-ui/grokbotapp-web@main/status.json" '"version"'
+          if [ "$fail" != "0" ]; then
+            echo "One or more hosts failed"
+            exit 1
+          fi
