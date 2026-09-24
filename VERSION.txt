@@ -1,3 +1,3 @@
-GROKBOTAPP-WEB LOCKED v1.0.0-2026-09-24
-Host: Railway Caddy static
-Health: /
+GROKBOTAPP LOCKED v1.1.0-2026-09-24
+Host: https://grokbotapp.up.railway.app
+Source: elbarbongdl88-ui/grokbotapp-web

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CI/CD lock</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <p><a href="/">← Grokbotapp</a></p>
+  <h1>Pipeline bloqueado</h1>
+  <pre>push grokbotapp-web main
+  → Railway Railpack Staticfile + Caddy
+  → https://grokbotapp.up.railway.app</pre>
+  <ul>
+    <li>Start command: <code>caddy run --config /app/Caddyfile --adapter caddyfile</code></li>
+    <li>No usar npx en Railway. El image no trae Node.</li>
+    <li>Vercel create_git_project = 402 hasta pagar Kennel</li>
+    <li>aegis-face PR #5 merged, CI green</li>
+  </ul>
+</body>
+</html>

@@ -1,6 +1,7 @@
-# Grokbotapp (free Pages)
+# Grokbotapp v1.1
 
-Public static site. Deploy is GitHub Actions → GitHub Pages.
+Live: https://grokbotapp.up.railway.app
 
-Expected URL after the first green Pages run:
-https://elbarbongdl88-ui.github.io/grokbotapp-web/
+Filled pages: home, Jet Motos 10-cam quote, XR190 fitment, CI/CD lock, status.json.
+
+Do not set Railway start to npx. Caddy only.
