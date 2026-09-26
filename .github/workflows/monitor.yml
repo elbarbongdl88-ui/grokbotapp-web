@@ -36,7 +36,7 @@ jobs:
           }
           check "https://grokbotapp.up.railway.app/" "LOCKED v1.1"
           check "https://grokbotapp.up.railway.app/status.json" '"version"'
-          check "https://grokbotapp.up.railway.app/quote.html" "Jet Motos"
+          check "https://grokbotapp.up.railway.app/quote.html" "desglose"
           check "https://elbarbongdl88-ui.github.io/" "LOCKED v1.1"
           check "https://elbarbongdl88-ui.github.io/status.json" '"version"'
           check "https://cdn.jsdelivr.net/gh/elbarbongdl88-ui/grokbotapp-web@main/status.json" '"version"'
