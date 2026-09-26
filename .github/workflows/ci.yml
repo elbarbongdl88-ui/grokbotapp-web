@@ -22,6 +22,5 @@ jobs:
           test -f index.html
           test -f Caddyfile
           test -f railway.json
-          test -f VERSION.txt
           python3 -m json.tool railway.json >/dev/null
           echo "Grokbotapp-web deploy contract OK"

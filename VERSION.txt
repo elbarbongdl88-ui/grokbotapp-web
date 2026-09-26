@@ -1,3 +1,0 @@
-GROKBOTAPP LOCKED v1.1.1-2026-09-24
-Host: https://grokbotapp.up.railway.app
-Mirror: https://elbarbongdl88-ui.github.io/
